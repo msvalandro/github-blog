@@ -17,11 +17,19 @@
   body {
     @apply bg-base-background text-base-text;
     -webkit-font-smoothing: antialiased;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   body, input, textarea, button {
     font: 400 1rem 'Nunito', sans-serif;
     line-height: 1.6;
+  }
+
+  .paragraph-ellipsis {
+    overflow: hidden; 
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
   }
 }
