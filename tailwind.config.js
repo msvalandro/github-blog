@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     colors: {
       blue: '#3294F8',
@@ -24,7 +24,11 @@ export default {
       xl: '1.25rem',
       '2xl': '1.5rem',
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'image-cover': "url('/cover.png')",
+      },
+    },
   },
   plugins: [],
 }
