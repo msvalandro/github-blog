@@ -5,9 +5,11 @@ import {
   Users,
 } from '@phosphor-icons/react'
 
+import { Panel } from '../../../components/panel'
+
 export function Profile() {
   return (
-    <div className="relative flex h-[212px] min-w-[864px] -translate-y-[88px] items-center rounded-[10px] bg-base-profile px-10 py-8">
+    <Panel className="h-[212px] items-center">
       <img
         src="https://github.com/msvalandro.png"
         alt="Foto de perfil do usuário"
@@ -50,6 +52,6 @@ export function Profile() {
         github
         <ArrowSquareOut />
       </a>
-    </div>
+    </Panel>
   )
 }

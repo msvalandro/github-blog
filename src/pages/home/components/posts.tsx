@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export function Posts() {
   return (
     <>
@@ -18,24 +20,27 @@ export function Posts() {
             key={index}
             className="h-[260px] overflow-hidden rounded-[10px] bg-base-post p-8"
           >
-            <header className="flex justify-between">
-              <h1 className="text-xl font-bold text-base-title">
-                JavaScript data types and data structures
-              </h1>
-              <span className="ml-4 w-[80px] text-end text-sm text-base-span">
-                Há 1 dia
-              </span>
-            </header>
+            <Link to="post/1">
+              <header className="flex justify-between">
+                <h1 className="text-xl font-bold text-base-title">
+                  JavaScript data types and data structures
+                </h1>
+                <span className="ml-4 w-[80px] text-end text-sm text-base-span">
+                  Há 1 dia
+                </span>
+              </header>
 
-            <p className="paragraph-ellipsis mt-4">
-              Programming languages all have built-in data structures, but these
-              often differ from one language to another. This article attempts
-              to list the built-in data structures available in JavaScript and
-              what properties they have. These can be used to build other data
-              structures. Wherever possible, comparisons with other languages
-              are drawn. Dynamic typing JavaScript is a loosely typed and
-              dynamic language. Variables in JavaScript are not directly
-            </p>
+              <p className="paragraph-ellipsis mt-4">
+                Programming languages all have built-in data structures, but
+                these often differ from one language to another. This article
+                attempts to list the built-in data structures available in
+                JavaScript and what properties they have. These can be used to
+                build other data structures. Wherever possible, comparisons with
+                other languages are drawn. Dynamic typing JavaScript is a
+                loosely typed and dynamic language. Variables in JavaScript are
+                not directly
+              </p>
+            </Link>
           </li>
         ))}
       </ul>
