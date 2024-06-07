@@ -4,7 +4,7 @@ import { Header } from '../components/header'
 
 export function DefaultLayout() {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <Header />
       <Outlet />
     </div>

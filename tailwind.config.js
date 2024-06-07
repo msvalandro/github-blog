@@ -19,7 +19,7 @@ export default {
     fontSize: {
       xs: '.75rem',
       sm: '.875rem',
-      m: '1rem',
+      md: '1rem',
       lg: '1.125rem',
       xl: '1.25rem',
       '2xl': '1.5rem',
