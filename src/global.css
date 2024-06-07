@@ -21,7 +21,7 @@
   }
 
   body, input, textarea, button {
-    font: 400 1rem 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
     line-height: 1.6;
   }
 
@@ -39,5 +39,25 @@
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
+  }
+
+  .markdown-content h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+  }
+
+  .markdown-content h1 {
+    font-size: 2rem;
+  }
+
+  .markdown-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .markdown-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .markdown-content img {
+    margin: 0.875rem 0;
   }
 }
